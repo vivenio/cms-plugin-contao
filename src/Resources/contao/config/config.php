@@ -9,9 +9,7 @@
  * file that was distributed with this source code.
  */
 
-if (TL_MODE === 'FE') {
-    $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/vivenio_contao/assets/seamless.parent.js';
-}
+$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/vivenio_contao/assets/seamless.parent.js';
 
 $GLOBALS['TL_CTE']['vivenio'] = array
 (

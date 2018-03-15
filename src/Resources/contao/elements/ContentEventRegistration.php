@@ -21,14 +21,13 @@ class ContentEventRegistration extends \ContentElement
 
     public function generate()
     {
-        if (TL_MODE == 'BE') {
-            $objTemplate = new \BackendTemplate('be_wildcard');
-            $objTemplate->wildcard = '### CONTAO MODULE ###';
+        $generated = parent::generate();
 
-            return $objTemplate->parse();
+        if (TL_MODE === 'BE') {
+            return '<div style="min-height: 65px;">' . $generated . '</div>';
         }
 
-        return parent::generate();
+        return $generated;
     }
 
     protected function compile()
