@@ -1,0 +1,37 @@
+{
+    "name": "vivenio/contao-bundle",
+    "type": "contao-bundle",
+    "description": "Contao 4 contao bundle",
+    "keywords": ["contao", "image"],
+    "homepage":"https://www.vivenio.de",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Kiesel",
+            "homepage": "https://github.com/iCodr8"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Vivenio/contao-bundle/issues",
+        "source": "https://github.com/Vivenio/contao-bundle"
+    },
+    "require": {
+        "php": ">=7.1",
+        "contao/core-bundle": "~4.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "Vivenio\\ContaoBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vivenio\\ContaoBundle\\": "src/"
+        }
+    }
+}
