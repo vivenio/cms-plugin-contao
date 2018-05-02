@@ -10,7 +10,13 @@
             document.getElementById('vivenio-<?= $this->id ?>').appendChild(iframe);
 
             var vivenioIframe = document.getElementById('vivenio-iframe-<?= $this->id ?>');
-            window.seamless(vivenioIframe);
+            var child = window.seamless(vivenioIframe);
+
+            child.receive(function(data) {
+                if (data.scrollToIframe) {
+                    vivenioIframe.scrollIntoView(true);
+                }
+            });
 
             if (queryParams.match(/vjump\=true/g)) {
                 vivenioIframe.scrollIntoView(true);
