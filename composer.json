@@ -1,5 +1,5 @@
 {
-    "name": "vivenio/contao-bundle",
+    "name": "vivenio/cms-plugin-contao",
     "type": "contao-bundle",
     "description": "Contao 4 contao bundle",
     "keywords": ["contao", "image"],
@@ -12,8 +12,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/Vivenio/contao-bundle/issues",
-        "source": "https://github.com/Vivenio/contao-bundle"
+        "issues": "https://github.com/vivenio/cms-plugin-contao/issues",
+        "source": "https://github.com/vivenio/cms-plugin-contao"
     },
     "require": {
         "php": ">=7.1",

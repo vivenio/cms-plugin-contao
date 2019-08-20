@@ -13,7 +13,7 @@
  * Register the classes
  */
 ClassLoader::addClasses(array(
-    //'Vivenio\\ContaoBundle\\Elements\\ContentEventRegistration'   => 'vendor/vivenio/contao-bundle/src/Resources/contao/elements/ContentEventRegistration.php',
+    //'Vivenio\\ContaoBundle\\Elements\\ContentEventRegistration'   => 'vendor/vivenio/cms-plugin-contao/src/Resources/contao/elements/ContentEventRegistration.php',
     'Vivenio\\ContaoBundle\\Elements\\ContentEventRegistration'   => 'system/modules/vivenio_contao/elements/ContentEventRegistration.php',
 ));
 
@@ -22,6 +22,6 @@ ClassLoader::addClasses(array(
  */
 TemplateLoader::addFiles(array
 (
-    // 'ce_vivenio_event_registration' => 'vendor/vivenio/contao-bundle/src/Resources/contao/templates',
+    // 'ce_vivenio_event_registration' => 'vendor/vivenio/cms-plugin-contao/src/Resources/contao/templates',
     'ce_vivenio_event_registration' => 'system/modules/vivenio_contao/templates',
 ));
